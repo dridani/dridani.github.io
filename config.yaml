@@ -1,0 +1,152 @@
+baseURL: https://drdni.github.io/
+languageCode: id-ID
+defaultContentLanguage: id
+title: DRIDANI BLOG
+paginate: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+menu:
+  main:
+    - name: Beranda
+      url: /
+      weight: 10
+    - name: Tentang
+      url: /tentang/
+      weight: 10
+    - name: Arsip
+      url: /arsip/
+      weight: 20
+    - name: Cari
+      url: /cari/
+      weight: 40
+    - name: Kategori
+      url: /kategori/
+      weight: 30
+
+params:
+  author: Dony Ridani
+  env: production
+  description: "Blog pribadi yang berisikan informasi, dokumentasi, catatan, dan keluh kesah penulis."
+  keywords: [Personal Blog, Portfolio, Dridani]
+  DateFormat: "Monday, 2 January 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  ShowShareButtons: true
+  ShowToc: true
+  TocOpen: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  hideFooter: false
+
+  assets:
+    disableHLJS: true
+    favicon: "images/favicon.ico"
+    favicon16x16: "images/favicon-16x16.png"
+    favicon32x32: "images/favicon-32x32.png"
+    apple_touch_icon: "images/apple-touch-icon.png"
+
+  homeInfoParams:
+    Title: Hai! Saya Dony Ridani 👋
+    Content: Blog ini berisikan informasi, dokumentasi, dan hal-hal gabut saya lainnya.
+
+  profileMode:
+    enabled: false
+    title: "Dony Ridani"
+    subtitle: "Hai gaes! Selamat datang di blog pribadi saya."
+    # imageUrl: "images/profile-me.png"
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: "avatar-profile"
+
+  socialIcons:
+    - name: facebook
+      url: "https://facebook.com/dony.ridani"
+    - name: instagram
+      url: "https://instagram.com/dony.ridani/"
+    - name: twitter
+      url: "https://twitter.com/DonyRidani"
+    - name: rss
+      url: "index.xml"
+  
+  analytics:
+    google:
+      SiteVerificationTag: "#"
+    bing:
+      SiteVerificationTag: "#"
+    yandex:
+      SiteVerificationTag: "#"
+
+  cover:
+    responsiveImages: false
+    linkFullImages: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: solarized-dark
+    tabWidth: 4
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
