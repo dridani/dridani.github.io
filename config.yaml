@@ -1,0 +1,191 @@
+baseURL: https://dridani.github.io/
+languageCode: en-EN
+defaultContentLanguage: en
+title: DRIDANI BLOG
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableInlineShortcodes: true
+enableEmoji: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  author: Dony Ridani
+  env: production
+  title: DRIDANI BLOG
+  description: "Blog pribadi yang berisikan informasi, dokumentasi, catatan, dan keluh kesah penulis."
+  keywords: [Personal Blog, Portfolio, Dridani]
+  DateFormat: "Monday, 2 January 2006"
+  
+  defaultTheme: auto
+  # disableThemeToggle: false
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  ShowAllPagesInArchive: true
+  ShowShareButtons: true
+  ShowPageNums: true
+  showtoc: true
+  tocopen: false
+  displayFullLangName: true
+  # disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  hideFooter: false
+
+  assets:
+    disableHLJS: true
+    # disableFingerprinting: true
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+
+  label:
+    text: "DRIDANI BLOG"
+    # icon: 
+    # iconHeight: 35
+
+  homeInfoParams:
+    Title: Hai! Saya Dony Ridani
+    Content: >
+      :wave: Selamat datang di blog saya yang sederhana ini.
+      
+      - Blog ini berisikan dokumentasi dan hal-hal gabut saya lainnya.
+
+      - Selengkapnya tentang saya & blog ini bisa kamu klik [disini](/about).
+
+      - Jika berkenan ikuti sosial media saya di bawah ini, untuk mendapatkan info terbaru dari saya (jarang ngepost sih :grin:).
+
+#  profileMode:
+#    enabled: false
+#    title: "Dony Ridani"
+#    subtitle: "Hai gaes! Selamat datang di blog pribadi saya."
+#    imageUrl: "profile-me.png"
+#    imageWidth: 200
+#    imageHeight: 200
+#    imageTitle: "profile-photos"
+
+  socialIcons:
+    # - name: facebook
+    #   title: Follow Me on Facebook
+    #   url: "https://facebook.com/dony.ridani"
+    - name: instagram
+      title: Follow Me on Instagram
+      url: "https://instagram.com/dony.ridani/"
+    - name: x
+      title: Follow Me on X
+      url: "https://twitter.com/DonyRidani"
+    - name: telegram
+      title: Chat Me on Telegram
+      url: "https://t.me/iminterfacing/"
+    - name: rss
+      title: subscribe to RSS Feed
+      url: "index.xml"
+  
+  analytics:
+    google:
+      SiteVerificationTag: "#"
+    bing:
+      SiteVerificationTag: "#"
+    yandex:
+      SiteVerificationTag: "#"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+    responsiveImages: false
+    linkFullImages: false
+
+  # editPost:
+    # URL: "https://github.com/dridani/dridani.github.io/content"
+    # Text: "Suggest Changes"
+    # appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - name: About
+      url: /about
+      weight: 10
+    - name: Archive
+      url: /archives
+      weight: 20
+    - name: Tags
+      url: /tags
+      weight: 30
+    - name: Search
+      url: /search
+      weight: 40
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: solarized-dark
+    tabWidth: 4
+
+# privacy:
+#  vimeo:
+#    disabled: false
+#    simple: true
+
+#  twitter:
+#    disabled: false
+#    enableDNT: true
+#    simple: true
+
+#  instagram:
+#    disabled: false
+#    simple: true
+
+#  youtube:
+#    disabled: false
+#    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
