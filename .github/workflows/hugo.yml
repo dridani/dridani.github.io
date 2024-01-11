@@ -2,18 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: 
-      - master
-  paths-ignore:
-      - "**/README.md"
-      - "**/LICENSE"
-      - "**/LICENSE*"
-      - "**/CONTRIBUTING.md"
-      - "**/.gitignore"
-      - "**/netlify.toml"
-      - "config/development/**"
-      - "**/archetypes/**"
-
+    branches: ["master"]
 
   workflow_dispatch:
 
