@@ -70,7 +70,7 @@ params:
 
   homeInfoParams:
     Title: "Selamat Datang!"
-    Content: "Blog ini adalah tempat saya mendokumentasikan hasil belajar serta beberapa hal random yang saya lakukan."
+    Content: "Blog ini adalah tempat saya mendokumentasikan hasil belajar dan beberapa hal random yang saya lakukan."
 
   socialIcons:
     - name: facebook
