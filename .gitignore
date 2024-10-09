@@ -1,0 +1,16 @@
+# Default ignored files
+.DS_Store
+node_modules
+dist
+tmp
+*.bak
+
+# Generated files by Hugo
+/public
+/resources
+/cache
+jsconfig.json
+.hugo_build.lock
+
+# Generated files by Firebase
+/.firebase

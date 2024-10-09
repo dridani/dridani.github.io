@@ -1,0 +1,4 @@
+---
+Title: Postingan
+url: posts
+---
