@@ -69,8 +69,8 @@ params:
     text: "DRIDANI BLOG"
 
   homeInfoParams:
-    Title: "Hai! Saya Dony"
-    Content: "Selamat datang di blog pribadi saya. Blog ini adalah tempat saya mendokumentasikan hasil belajar serta hal-hal gabut yang saya lakukan."
+    Title: "Selamat Datang!"
+    Content: "Blog ini adalah tempat saya mendokumentasikan hasil belajar serta beberapa hal random yang saya lakukan."
 
   socialIcons:
     - name: facebook
