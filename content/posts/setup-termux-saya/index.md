@@ -13,6 +13,10 @@ comments: false
 draft: false
 ---
 
+Bagi saya termux adalah salah satu aplikasi favorit yang sangat sering saya gunakan, mulai dari untuk mengatur performa hp, mengelola repositori di github, sampai ngeblog pun juga saya lakukan di aplikasi ini.
+
+Nah! Agar termux bisa digunakan untuk menghandle kegiatan yang saya lakukan, maka saya perlu melakukan beberapa hal.
+
 ## Persiapan
 
 - Pindah Lokasi Mirror
@@ -21,13 +25,15 @@ draft: false
 termux-change-repo
 ```
 
+Di sini saya memilih **Single Mirror** - **DomaiNesia**
+
 - Izinkan Akses penyimpanan
 
 ```shell
 termux-setup-storage
 ```
 
-- Update dan Upgrade Package
+- Perbarui Package
 
 ```shell
 pkg update && pkg upgrade
@@ -55,7 +61,7 @@ mkdir .ssh
 cd .ssh
 ```
 
-- Membuat **Public Key** dan **Private Key**
+- Generate **Public Key** dan **Private Key**
 
 ```shell
 ssh-keygen -t ed25519 -C "emailkamu@gmail.com"
@@ -101,7 +107,7 @@ Jika di suruh memasukkan sesuatu ketikan saja **yes** lalu **Enter**
 pkg install zsh
 ```
 
-- Mendikan ZSH Sebagai Shell Bawaan
+- Jadikan ZSH Sebagai Shell Bawaan
 
 ```shell
 chsh -s zsh
@@ -128,19 +134,19 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-- Mengakifkan Plugin
+- Edit File zshrc
 
 ```shell
 nano ~/.zshrc
 ```
 
-Cari tulisan
+- Cari tulisan
 
 ```shell
 plugins=(git)
 ```
 
-Lalu ganti jadi seperti ini
+- Ganti jadi seperti ini
 
 ```shell
 plugins=(
@@ -149,3 +155,7 @@ zsh-autosuggestions
 zsh-syntax-highlighting
 )
 ```
+
+- Keluar dan Save 
+
+Tekan tombol `CTRL` + `X` lalu `y` dan `Enter`
