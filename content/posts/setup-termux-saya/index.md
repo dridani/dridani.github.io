@@ -15,7 +15,9 @@ draft: false
 
 Bagi saya termux adalah salah satu aplikasi favorit yang sangat sering saya gunakan, mulai dari untuk mengatur performa hp, mengelola repositori di github, sampai ngeblog pun juga saya lakukan di aplikasi ini.
 
-Nah! Agar termux bisa digunakan untuk menghandle kegiatan saya, maka ada beberapa hal yang perlu saya lakukan. Kamu juga bisa mencoba setup ini jika kamu bingung dengan apa yang harus di lakukan saat setelah menginstal termux.
+Nah! Agar termux bisa digunakan untuk menghandle kegiatan saya, maka ada beberapa hal yang perlu saya lakukan. 
+
+Kamu juga bisa mencoba setup ini jika kamu bingung dengan apa yang harus di lakukan saat setelah menginstal termux.
 
 ## Persiapan
 
@@ -97,7 +99,7 @@ ssh-add id_ed25519
 ssh -T git@github.com
 ```
 
-Di sini akan muncul pilihan yes/no, maka izinkan saja dengan mengetikan **yes** lalu tekan `Enter`
+Di sini akan muncul pilihan **yes/no**, maka izinkan saja dengan mengetikan **yes** lalu tekan `Enter`
 
 ---
 
@@ -117,7 +119,7 @@ chsh -s zsh
 
 - Restart Termux
 
-Tekan `CTRL` + `D` dan buka kembali aplikasi termux
+Tekan `CTRL + D` dan buka kembali aplikasi termux
 
 ---
 
@@ -185,7 +187,9 @@ zsh-syntax-highlighting
 
 - Keluar dan Save 
 
-Tekan tombol `CTRL` + `X` lalu `y` dan `Enter`
+	- Tekan tombol `CTRL + X` 
+	- lalu `y` 
+	- dan `Enter`
 
 Referensi:
 

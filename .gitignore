@@ -4,6 +4,7 @@ node_modules
 dist
 tmp
 *.bak
+.nomedia
 
 # Generated files by Hugo
 /public
